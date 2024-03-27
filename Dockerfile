@@ -5,7 +5,7 @@ FROM python:latest
 WORKDIR /docker_training
 
 # Copy the current directory contents into the container at /app
-COPY . /docker_training
+COPY helloWorld.py /docker_training
 
 # Install dependencies
 RUN pip install --no-cache-dir Flask
@@ -14,5 +14,5 @@ RUN pip install --no-cache-dir Flask
 EXPOSE 5000
 
 # Command to run the application
-CMD ["python", "app.py"]
+CMD ["python", "helloWorld.py"]
 
