@@ -1,0 +1,15 @@
+- name: docker docker hub
+  stages:
+    - build docker image
+    - push docker hub
+
+  tasks:
+    - name: build docker image
+      command:
+        - cd /Desktop/docker_training
+        - docker build -t dockertraining_flask .
+
+    - name: push docker hub
+      command:
+        - docker build -t dockertraining_flask2 .
+        - docker nasuheren/dockertraining_flask2:latest
