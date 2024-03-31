@@ -1,4 +1,4 @@
-- name: docker docker hub
+- name: build docker docker hub
   stages:
     - build docker image
     - push docker hub
