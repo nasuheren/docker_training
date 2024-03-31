@@ -4,4 +4,4 @@
 docker build -t dockertraining_flask2 .
 
 #Docker push
-docker nasuheren/dockertraining_flask2:latest
+docker push nasuheren/dockertraining_flask2:latest
