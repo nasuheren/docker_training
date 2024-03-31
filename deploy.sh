@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #Docker pull
-res=$(docker image inspect nasuheren/dockertraining_flask:latest --format="exists")
+res=$(docker image inspect nasuheren/dockertraining:latest --format="exists")
 if [ "$res" != "exists" ]; then
-    docker pull nasuheren/dockertraining_flask:latest
+    docker pull nasuheren/dockertraining:latest
 fi
 
 #stop and remove
@@ -14,4 +14,4 @@ if [ "$ce" != "" ]; then
 fi
 
 #run
-docker run -d --name dockertraining nasuheren/dockertraining_flask:latest
+docker run -d --name dockertraining nasuheren/dockertraining:latest
