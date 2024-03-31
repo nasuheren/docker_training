@@ -7,9 +7,6 @@ WORKDIR /docker_training
 # Copy the current directory contents into the container at /app
 COPY helloWorld.py /docker_training
 
-# Install dependencies
-RUN pip install --no-cache-dir Flask
-
 # Expose the port the app runs on
 EXPOSE 5000
 
