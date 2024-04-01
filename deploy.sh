@@ -11,7 +11,9 @@ ce=$(docker ps -a --format "{{.Names}}" | grep "^dockertraining$")
 if [ "$ce" != "" ]; then
     docker container stop $ce
     docker rm -f $ce
+    #run
+    docker run -d --name dockertraining nasuheren/dockertraining:latest
+else
+    #run
+    docker run -d --name dockertraining nasuheren/dockertraining:latest
 fi
-
-#run
-docker run -d --name dockertraining nasuheren/dockertraining:latest
