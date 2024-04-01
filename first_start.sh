@@ -3,7 +3,7 @@
 # build docker image
 docker build -t dockertraining .
 
-#image tag
+# image tag
 docker tag dockertraining nasuheren/dockertraining:latest
 
 # push docker hub
